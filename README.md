@@ -34,6 +34,8 @@ pip install -r requirements.txt
 # Create data folder if it doesn't exist
 mkdir -p data
 
+pip install kaggle
+
 # Download dataset to data folder
 kaggle competitions download -c titanic -p data
 
@@ -62,6 +64,8 @@ REM Create data folder if it doesn't exist
 if not exist data (
     mkdir data
 )
+
+pip install kaggle
 
 REM Download dataset to data folder
 kaggle competitions download -c titanic -p data
